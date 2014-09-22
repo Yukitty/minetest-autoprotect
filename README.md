@@ -1,7 +1,7 @@
 Autoprotect
 ===========
 **Minetest** 0.4.10 mod *autoprotect* by JTE.
-Released under the MIT license (see *[LICENSE](https://github.com/Yukitty/minetest-autoprotect/blob/master/LICENSE)* for details)
+Released entirely under the terms of WTFPL (see *[LICENSE](https://github.com/Yukitty/minetest-autoprotect/blob/master/LICENSE)* for details)
 
 This module is a collection of scripts which are intended to provide the following services to your Minetest game:
 * Spawn area protection within a given radius, to protect newcomers and allow grief-proof permanent server-owned structures to be built.

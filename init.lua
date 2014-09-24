@@ -1,7 +1,7 @@
 --[[
 
 Minetest module "autoprotect" (script program and related resources)
-Copyright © 2014 John J. Muniz (jason.the.echidna@gmail.com)
+Copyright Â© 2014 John J. Muniz (jason.the.echidna@gmail.com)
 
 Released under the terms of WTFPL, see http://www.wtfpl.net/txt/copying/
 
@@ -322,7 +322,7 @@ function autoprotect.claim(who, a, b, fromTool)
 	if not fromTool or not autoprotect.selection[who].area then
 		autoprotect.selection[who].area = {minp.x,minp.y,minp.z, maxp.x,maxp.y,maxp.z, owner=who, allowed={}}
 		table.insert(autoprotect.protection, autoprotect.selection[who].area)
-		autoprotect.blocks[who] = autoprotect.blocks[who] + (maxp.x - minp.x)*(maxp.z - minp.z)
+		autoprotect.blocks[who] = (autoprotect.blocks[who] or 0) + (maxp.x - minp.x)*(maxp.z - minp.z)
 		core.chat_send_player(who, "Area protected.")
 	else
 		local area = autoprotect.selection[who].area
